@@ -26,8 +26,8 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /* ── reset streamlit chrome ── */
-#MainMenu, footer, header { visibility: hidden; }
-.block-container { padding: 0 !important; max-width: 100% !important; }
+#MainMenu, footer { visibility: hidden; }
+.block-container { padding: 1rem 2rem !important; max-width: 100% !important; }
 .stApp { background: #080C16; }
 
 /* ── sidebar ── */
