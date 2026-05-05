@@ -29,6 +29,9 @@ st.markdown("""
 #MainMenu, footer { visibility: hidden; }
 .block-container { padding: 1rem 2rem !important; max-width: 100% !important; }
 .stApp { background: #080C16; }
+[data-testid="collapsedControl"] {
+    display: none !important;
+}
 
 /* ── sidebar ── */
 [data-testid="stSidebar"] {
