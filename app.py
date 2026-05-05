@@ -29,21 +29,7 @@ st.markdown("""
 #MainMenu, footer { visibility: hidden; }
 .block-container { padding: 1rem 2rem !important; max-width: 100% !important; }
 .stApp { background: #080C16; }
-/* Hide sidebar toggle button completely */
-button[kind="header"] {
-    display: none !important;
-}
-/* Hide the arrow icon inside the toggle button */
-button[kind="header"] svg {
-    display: none !important;
-}
 
-/* Optional: shrink the button so it’s not ugly */
-button[kind="header"] {
-    width: 28px !important;
-    height: 28px !important;
-    background: transparent !important;
-}
 
 /* ── sidebar ── */
 [data-testid="stSidebar"] {
@@ -224,18 +210,16 @@ p, li, span { font-family: 'DM Sans', sans-serif !important; color: #C5CCDF !imp
 }
 </style>
 """, unsafe_allow_html=True)
+
 st.markdown("""
 <script>
 const observer = new MutationObserver(() => {
   const btn = window.parent.document.querySelector('button[kind="header"]');
-
-  if (btn && !btn.dataset.modified) {
-    btn.dataset.modified = "true";
-
-    btn.innerHTML = "☰";  // change icon here
+  if (btn && !btn.querySelector('span')) {
+    const span = document.createElement('span');
+    btn.appendChild(span);
   }
 });
-
 observer.observe(window.parent.document, { childList: true, subtree: true });
 </script>
 """, unsafe_allow_html=True)
