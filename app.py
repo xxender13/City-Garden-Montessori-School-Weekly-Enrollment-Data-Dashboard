@@ -34,14 +34,6 @@ button[kind="header"] {
     display: none !important;
 }
 
-/* Backup selectors (covers other versions) */
-[data-testid="collapsedControl"] {
-    display: none !important;
-}
-
-header button {
-    display: none !important;
-}
 
 /* ── sidebar ── */
 [data-testid="stSidebar"] {
