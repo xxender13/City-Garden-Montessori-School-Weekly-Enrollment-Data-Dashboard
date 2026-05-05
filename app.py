@@ -33,7 +33,17 @@ st.markdown("""
 button[kind="header"] {
     display: none !important;
 }
+/* Hide the arrow icon inside the toggle button */
+button[kind="header"] svg {
+    display: none !important;
+}
 
+/* Optional: shrink the button so it’s not ugly */
+button[kind="header"] {
+    width: 28px !important;
+    height: 28px !important;
+    background: transparent !important;
+}
 
 /* ── sidebar ── */
 [data-testid="stSidebar"] {
