@@ -792,58 +792,6 @@ if uploaded is None:
         <div class="school-name">City Garden Montessori School</div>
         <div class="school-tagline">Weekly Data Dashboard · Powered by Streamlit</div>
 
-        <div class="how-it-works">
-          <div class="step-card">
-            <div class="step-num">1</div>
-            <div class="step-title">Upload Your File</div>
-            <div class="step-desc">Use the sidebar to upload your weekly <b>summary .xlsx</b> from Infinite Campus.</div>
-          </div>
-          <div class="step-card">
-            <div class="step-num">2</div>
-            <div class="step-title">Instant Dashboard</div>
-            <div class="step-desc">The dashboard renders automatically — no configuration needed. Same format every week.</div>
-          </div>
-          <div class="step-card">
-            <div class="step-num">3</div>
-            <div class="step-title">Review &amp; Share</div>
-            <div class="step-desc">Scroll through all sections. Use your browser's print or save function to export.</div>
-          </div>
-        </div>
-
-        <hr class="divider">
-        <div class="what-inside">What's inside the dashboard</div>
-
-        <div class="feature-grid">
-          <div class="feature-item">
-            <span class="feature-icon">📊</span>
-            <div class="feature-text"><b>8 KPI Cards</b> — enrollment, attendance, ADA, 90/90 rate, discipline totals at a glance</div>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">🎒</span>
-            <div class="feature-text"><b>Enrollment Charts</b> — actual vs. budget bar charts + full grade detail table with variance badges</div>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">📅</span>
-            <div class="feature-text"><b>Attendance</b> — color-coded by grade (green ≥93% / yellow ≥90% / red &lt;90%) with YTD trend line</div>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">👥</span>
-            <div class="feature-text"><b>Demographics</b> — race/ethnicity donut chart + FRL stacked bars across Charter, Preschool, EAEC, ECEC</div>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">🎯</span>
-            <div class="feature-text"><b>Special Programs</b> — IEP, 504, and ELL counts with Charter vs. Whole School rate comparison</div>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">⚠️</span>
-            <div class="feature-text"><b>Discipline</b> — ISS &amp; OSS this week and year-to-date with clean visual breakdown</div>
-          </div>
-        </div>
-
-        <div class="note-box">
-          👈 &nbsp;<b>Upload your weekly summary .xlsx using the sidebar</b> to generate the dashboard instantly.<br>
-          The file must contain a sheet named <b>summary</b> with the standard Infinite Campus export format.
-        </div>
       </div>
     </div>
     """, unsafe_allow_html=True)
