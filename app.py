@@ -232,7 +232,7 @@ COMMON = dict(
 
 # ── DATA PARSER ───────────────────────────────────────────────────────────────
 def parse_excel(uploaded_file):
-    df = pd.read_excel(sheet_name="summary", header=None)
+    df = pd.read_excel(uploaded_file,sheet_name="summary", header=None)
 
     def cell(r, c):
         try:
