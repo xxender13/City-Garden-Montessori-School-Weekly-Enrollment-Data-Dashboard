@@ -214,6 +214,21 @@ p, li, span { font-family: 'DM Sans', sans-serif !important; color: #C5CCDF !imp
 }
 </style>
 """, unsafe_allow_html=True)
+st.markdown("""
+<script>
+const observer = new MutationObserver(() => {
+  const btn = window.parent.document.querySelector('button[kind="header"]');
+
+  if (btn && !btn.dataset.modified) {
+    btn.dataset.modified = "true";
+
+    btn.innerHTML = "☰";  // change icon here
+  }
+});
+
+observer.observe(window.parent.document, { childList: true, subtree: true });
+</script>
+""", unsafe_allow_html=True)
 
 
 # ── DESIGN TOKENS (shared with chart builder) ─────────────────────────────────
