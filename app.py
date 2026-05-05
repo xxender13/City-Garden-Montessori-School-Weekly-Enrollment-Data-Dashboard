@@ -743,8 +743,7 @@ with st.sidebar:
     st.markdown("#### Upload Weekly File")
     uploaded = st.file_uploader(
         "Drop your summary .xlsx here",
-        type=["xlsx"],
-        help="Upload the weekly summary Excel file exported from Infinite Campus. The file must contain a sheet named 'summary'.",
+        type=["xlsx"]
     )
 
     st.markdown("<hr style='border-color:#1E2740;margin:20px 0'>", unsafe_allow_html=True)
