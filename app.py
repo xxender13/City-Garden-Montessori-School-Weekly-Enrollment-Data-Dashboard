@@ -29,7 +29,17 @@ st.markdown("""
 #MainMenu, footer { visibility: hidden; }
 .block-container { padding: 1rem 2rem !important; max-width: 100% !important; }
 .stApp { background: #080C16; }
+/* Hide sidebar toggle button completely */
+button[kind="header"] {
+    display: none !important;
+}
+
+/* Backup selectors (covers other versions) */
 [data-testid="collapsedControl"] {
+    display: none !important;
+}
+
+header button {
     display: none !important;
 }
 
