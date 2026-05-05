@@ -1,4 +1,4 @@
-```python
+
 """
 City Garden Montessori School — Weekly Dashboard
 Branded UI + Clean Sidebar + Fixed Landing Page
